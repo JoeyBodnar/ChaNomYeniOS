@@ -11,5 +11,5 @@ import Foundation
 enum HTTPRequestMethod: String {
     case get = "GET"
     case post = "POST"
-    case remove = "Delete"
+    case remove = "DELETE"
 }

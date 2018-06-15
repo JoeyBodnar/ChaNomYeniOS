@@ -27,12 +27,31 @@ class ViewController: UIViewController {
     }
     
     @objc func set() {
-        let key = homeView.keyTextField.text
-        let value = homeView.valueTextField.text
+        let key = homeView.keyTextField.text!
+        let value = homeView.valueTextField.text!
+        let valueEncoded = value.data(using: String.Encoding.utf8)
+        KeyValueKit.set(valueEncoded, forKey: key) { (result) in
+            print("the result is  \(result)")
+            DispatchQueue.main.async {
+                self.homeView.resultLabel.text = "The value for key \(key) was saved as \(value)"
+                self.homeView.resultLabel.sizeToFit()
+            }
+        }
     }
     
     @objc func get() {
         print("get was pressed")
+        let key = homeView.keyTextField.text!
+        KeyValueKit.getValue(forKey: key)  {  (result: Result<Data>) in
+            switch result {
+            case .success(let data):
+                    print("the get value result is \(String(data: data, encoding: .utf8) ?? "")")
+                    self.homeView.resultLabel.text = "The value for key \(key) is \(String(data: data, encoding: .utf8) ?? "")"
+            default:
+                return
+            }
+            
+        }
     }
     
     @objc func remove() {

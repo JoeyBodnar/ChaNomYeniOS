@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC6B5B3620D3708A00A750F5 /* GetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B5B3520D3708A00A750F5 /* GetResponse.swift */; };
 		EC2A0A1020D24768004FF165 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2A0A0F20D24768004FF165 /* AppDelegate.swift */; };
 		EC2A0A1220D24768004FF165 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2A0A1120D24768004FF165 /* ViewController.swift */; };
 		EC2A0A1520D24768004FF165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2A0A1320D24768004FF165 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC6B5B3520D3708A00A750F5 /* GetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetResponse.swift; sourceTree = "<group>"; };
 		EC2A0A0C20D24768004FF165 /* KeyValueKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyValueKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC2A0A0F20D24768004FF165 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC2A0A1120D24768004FF165 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				EC2A0A2820D24BE2004FF165 /* HTTPRequestMethod.swift */,
 				EC2A0A2620D24BA1004FF165 /* HTTPRequestResult.swift */,
 				EC2A0A2A20D24F62004FF165 /* HTTPRequestError.swift */,
+				DC6B5B3520D3708A00A750F5 /* GetResponse.swift */,
 			);
 			path = KeyValueKit;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			files = (
 				EC2A0A1220D24768004FF165 /* ViewController.swift in Sources */,
 				EC2A0A2B20D24F62004FF165 /* HTTPRequestError.swift in Sources */,
+				DC6B5B3620D3708A00A750F5 /* GetResponse.swift in Sources */,
 				EC2A0A2520D24B12004FF165 /* HTTPRequest.swift in Sources */,
 				EC2A0A2720D24BA1004FF165 /* HTTPRequestResult.swift in Sources */,
 				EC2A0A1020D24768004FF165 /* AppDelegate.swift in Sources */,
